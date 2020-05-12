@@ -1,0 +1,8 @@
+<h1>cowsay History</h1>
+<h3>The 10 most recent cowsays</h3>
+<hr />
+{%for cow in cow_history%}
+<pre>{{cow}}</pre>
+{%endfor%}
+
+<a href="{% url 'homepage' %}">Home</a>

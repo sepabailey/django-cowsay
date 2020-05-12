@@ -1,0 +1,12 @@
+<h1>cowsay</h1>
+
+<form action="" method="post">
+  {% csrf_token %} {{form.as_p}}
+  <input type="submit" value="Submit! " />
+</form>
+
+{% for cow in cow_data %} {{cow}} {% endfor %}
+
+<pre>{{cowput}}</pre>
+
+<a href="{% url 'history' %}">History</a>
