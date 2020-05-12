@@ -33,6 +33,7 @@ def history(request):
     cow_history = []
     for cow in cow_data:
         cow_history.append(cow)
+    # Matt helped with the slicing on line 37
     cow_history = cow_history[-10:]
     cow_history.reverse()
 
